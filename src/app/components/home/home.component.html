@@ -1,3 +1,17 @@
-<p>
-  home works!
-</p>
+<div *ngIf="1==1">
+  <p>
+    Contenido del div
+  </p>
+</div>
+
+
+<div *ngIf="showList">
+  <b>Mi Lista</b>
+  <ul *ngIf="showContent">
+    <li>Valor 1</li>
+    <li>Valor 2</li>
+    <li>Valor 3</li>
+    <li>Valor 4</li>
+    <li *ngIf="!hideItem">No Mostrar</li>
+  </ul>
+</div>

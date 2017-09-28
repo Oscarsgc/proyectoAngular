@@ -1,3 +1,6 @@
-<p>
-  experiences works!
-</p>
+<ul>
+  <li *ngFor="let x of educacion">
+    {{x.institucion}}<br> {{x.grado}}
+    <img src="{{x.imagen}}">
+  </li>
+</ul>

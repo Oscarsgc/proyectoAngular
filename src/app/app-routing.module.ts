@@ -6,6 +6,8 @@ import { ExperienceComponent } from 'app/components/experience/experience.compon
 import { AbilitiesComponent } from 'app/components/abilities/abilities.component';
 import { ProjectsComponent } from 'app/components/projects/projects.component';
 import { ContactComponent } from 'app/components/contact/contact.component';
+import { DemoComponent } from 'app/components/demo/demo.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,11 +15,13 @@ const routes: Routes = [
   { path: 'experiences', component: ExperienceComponent },
   { path: 'abilities', component: AbilitiesComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contact', component: ContactComponent },
+  { path: 'demo', component: DemoComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }

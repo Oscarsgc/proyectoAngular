@@ -1,3 +1,10 @@
-<p>
-  abilities works!
-</p>
+<ul>
+  <li *ngFor="let habilidad of habilidades">
+    <div class="col-md-2">
+      {{habilidad. nombre}}
+    </div>
+    <div class="col-md-2">
+      {{habilidad.puntaje}}
+    </div>
+  </li>
+</ul>

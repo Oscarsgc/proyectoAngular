@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'abilities',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./abilities.component.css']
 })
 export class AbilitiesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
+  private habilidades: any = [];
+  constructor(private http: Http) {
   }
 
+  ngOnInit() {
+    let url = "http://localhost:3000/habilidades";
+    this.http.get(url).subscribe((response: any) => {
+      this.habilidades = JSON.parse(response._body);
+    })
+  }
 }

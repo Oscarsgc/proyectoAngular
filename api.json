@@ -1,0 +1,35 @@
+{
+    "habilidades": [
+        {
+            "nombre": "Ingenieria de software",
+            "puntaje": 4
+        },
+        {
+            "nombre": "Programacion Web",
+            "puntaje": 5
+        },
+        {
+            "nombre": "Integración de sistemas",
+            "puntaje": 3
+        },
+        {
+            "nombre": "Seguridad de sistemas",
+            "puntaje": 5
+        }
+    ],
+    "educacion": [
+        {
+            "institucion": "Colegio La Salle",
+            "inicio": 1996,
+            "fin": 2010,
+            "grado": "bachiller en humanidades"
+        },
+        {
+            "institucion": "universidad catolica",
+            "inicio": 2011,
+            "fin": 2015,
+            "grado": "ingenieria de sistemas",
+            "imagen": "/assets/demo.jpg"
+        }
+    ]
+}
